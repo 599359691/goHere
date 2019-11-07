@@ -8,7 +8,7 @@
             输入城市/景点/游玩主题
         </div>
             <div class="header-right">
-                城市
+               {{ this.city}}
                 <span class="iconfont arrow-icon">&#xe64a;</span>
             </div>
     </div>
@@ -16,7 +16,10 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 
@@ -53,59 +56,3 @@ export default {
                 margin-left: -.04rem
                 font-size: .24rem
 </style>
-
-<!--<template>-->
-<!--    <div class="header">-->
-<!--        <div class="header-left">-->
-<!--            <div class="iconfont">&#xe624;</div>-->
-<!--        </div>-->
-<!--        <div class="header-input">-->
-<!--            <span class="iconfont">&#xe632;</span>-->
-<!--            输入城市/景点/游玩主题-->
-<!--        </div>-->
-<!--        <div class="header-right">-->
-<!--            城市-->
-<!--            <span class="iconfont">&#xe64a;</span>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</template>-->
-
-<!--<script>-->
-<!--export default {-->
-<!--  name: 'HomeHeader'-->
-<!--}-->
-<!--</script>-->
-
-<!--<style lang="stylus" scoped>-->
-<!--    .header-->
-<!--        display: flex-->
-<!--        line-height: .86rem-->
-<!--        background: #00bcd4-->
-<!--        color: #fff-->
-
-<!--        .header-left-->
-<!--            wight: .84rem-->
-<!--            float: left-->
-<!--            .back-icon-->
-<!--                text-align :center-->
-<!--                font-size: .4rem-->
-
-<!--        .header-input-->
-<!--            flex: 1-->
-<!--            height: .64rem-->
-<!--            line-height: .64rem-->
-<!--            margin-top: .12rem-->
-<!--            margin-left: .2rem-->
-<!--            background: #fff-->
-<!--            color: #ccc-->
-<!--            border-radius: .1rem-->
-<!--            padding-left: .2rem-->
-
-<!--        .header-right-->
-<!--            width: 1.24rem-->
-<!--            float: right-->
-<!--            text-align: center-->
-<!--            .arrow-icon-->
-<!--                margin-left:-.04rem-->
-<!--             font-size:.24rem-->
-<!--</style>-->

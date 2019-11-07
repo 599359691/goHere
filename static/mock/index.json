@@ -1,0 +1,102 @@
+{
+  "ret": true,
+  "data": {
+    "swiperList": [{
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg"
+    },{
+      "id": "0002",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1802/42/7c92b9a381e46402.jpg_640x200_1cdce2a4.jpg"
+    },{
+      "id": "0003",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1802/51/e78f936a5b404102.jpg_640x200_c14f0b3a.jpg"
+    },{
+      "id": "0004",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1712/91/a275569091681d02.jpg_640x200_0519ccb9.jpg"
+    }],
+    "iconList": [{
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
+      "desc": "景点门票"
+    }, {
+      "id": "0002",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png",
+      "desc": "滑雪季"
+    }, {
+      "id": "0003",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png",
+      "desc": "泡温泉"
+    }, {
+      "id": "0004",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
+      "desc": "动植园"
+    }, {
+      "id": "0005",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
+      "desc": "游乐园"
+    }, {
+      "id": "0006",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
+      "desc": "必游榜单"
+    }, {
+      "id": "0007",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/17/4bd370f3eb1acd02.png",
+      "desc": "演出"
+    }, {
+      "id": "0008",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png",
+      "desc": "城市观光"
+    }, {
+      "id": "0009",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
+      "desc": "一日游"
+    }],
+    "recommendList": [{
+      "id": "0001",
+      "imgUrl": "//img1.qunarzz.com/sight/p0/1605/58/5847560fd55ff6f590.water.jpg_256x160_13631f57.jpg",
+      "title": "凤凰古城",
+      "desc": "邂逅数个人，偶遇一座城"
+    }, {
+      "id": "0002",
+      "imgUrl": "//img1.qunarzz.com/sight/p0/1905/29/296e5659470d69bea3.img.jpg_256x160_0f20728d.jpg",
+      "title": "长沙世界之窗",
+      "desc": "将刺激的游乐项目和各国的历史遗迹融为一体"
+    }, {
+      "id": "0003",
+      "imgUrl": "//img1.qunarzz.com/sight/p79/201211/06/cb2677b88c36471c93835fbb.jpg_256x160_82d0f3bc.jpg",
+      "title": "张家界国家森林公园",
+      "desc": "三千奇峰，八百秀水"
+    }, {
+      "id": "0004",
+      "imgUrl": "//img1.qunarzz.com/sight/p0/1802/40/40b2075640718d7a3.img.png_256x160_778f7d0b.png",
+      "title": "天门山国家森林公园",
+      "desc": "穿越云霄的旅行"
+    }, {
+      "id": "0005",
+      "imgUrl": "//img1.qunarzz.com/sight/p0/1604/85/8557f0d167c9da5890.img.jpg_256x160_d523e80a.jpg",
+      "title": "张家界大峡谷",
+      "desc": "飞瀑神泉比比皆是，宛如来到世外桃源"
+    }],
+    "weekendList": [{
+      "id": "0001",
+      "imgUrl": "//imgs.qunarzz.com/p/tts8/1607/59/e5e56c66a90e599a.jpg_r_480x320x90_dd143fb3.jpg",
+      "title": "长沙-美娜多 5天跟团游",
+      "desc": "潜水圣地/年轻人的美娜多+当四酒店/城市观光/潜水教学/特色美食/精华景点"
+    }, {
+      "id": "0002",
+      "imgUrl": "//imgs.qunarzz.com/vs_ceph_vs_tts/228320eb-c4af-4244-816b-73804aa80a39.jpg_r_480x320x90_c0b620e5.jpg",
+      "title": "长沙-腾冲 6天跟团游",
+      "desc": "腾冲瑞丽4飞豪华游丨20人精品纯玩小团丨一价全含丨热海温泉+银杏村+和顺侨乡"
+    }, {
+      "id": "0003",
+      "imgUrl": "//imgs.qunarzz.com/vs_ceph_vs_tts/65337741-8743-4b79-89e2-45c066c3006e.gif",
+      "title": "长沙-野象谷 6天跟团游",
+      "desc": "双十一特惠【钜惠好礼丨0强消】泼水节体验+大象表演+孔雀放飞 昆版亲子6日"
+    }, {
+      "id": "0004",
+      "imgUrl": "//imgs.qunarzz.com/vs_ceph_vs_tts/a97ac6e1-57ab-490e-ad2c-90134042d023.jpg_r_480x320x90_d02a791e.jpg",
+      "title": "长沙-北京 5天自由行",
+      "desc": "\uD83D\uDD25京城情怀⊙亲子出游丨北京+故宫+北大清华4日/含机票+接送+酒店+门票"
+    }]
+  }
+}
