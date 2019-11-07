@@ -46,6 +46,7 @@ export default {
             height: 1.2rem
             line-height: .40rem
             font-size:.25rem
+            color: #979c93
             display:-webkit-box
             overflow:hidden
             white-space:normal
