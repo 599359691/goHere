@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="banner"
-             @click=" handleBannerClick ">
+             @click=" handleBannerClick">
             <img class="banner-img"
                  :src="bannerImg"/>
             <div class="banner-info">
@@ -12,15 +12,19 @@
                 </div>
             </div>
         </div>
-        <common-gallary
-                :imgs="bannerImgs"
-                v-show="showGallary"
-                @close="handleGallaryClose"></common-gallary>
+        <fade-animation>
+            <common-gallary
+                    :imgs="bannerImgs"
+                    v-show="showGallary"
+                    @close="handleGallaryClose">
+            </common-gallary>
+        </fade-animation>
     </div>
 </template>
 
 <script>
 import CommonGallary from 'common/gallary/Gallary'
+import FadeAnimation from 'common/fade/FadeAnimation'
 
 export default {
   name: 'DetailBanner',
@@ -43,7 +47,8 @@ export default {
     }
   },
   components: {
-    CommonGallary
+    CommonGallary,
+    FadeAnimation
   }
 }
 </script>
