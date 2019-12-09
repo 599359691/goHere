@@ -2,7 +2,7 @@
     <div class="header">
         <router-link
                 tag="div"
-                to="/login"
+                to="/mine"
                 class="header-abs">
             <div class="iconfont header-abs-back">&#xe624;</div>
 

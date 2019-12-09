@@ -1,18 +1,17 @@
 <template>
     <div>
-        <router-link
-                tag="div"
-                to="/"
+        <button
                 class="header-abs"
-                v-show="showAbs">
-            <div class="iconfont header-abs-back">&#xe624;</div>
-        </router-link>
+                v-show="showAbs"
+                @click="goBack">
+            <span class="iconfont header-abs-back">&#xe624;</span>
+        </button>
         <div class="header-fixed"
              v-show="!showAbs"
              :style="opacityStyle">
-            <router-link to="/">
-                <div class="iconfont header-fixed-back">&#xe624;</div>
-            </router-link>
+            <button @click="goBack">
+                <span class="iconfont header-fixed-back">&#xe624;</span>
+            </button>
             景点详情
         </div>
     </div>
@@ -42,6 +41,9 @@ export default {
       } else {
         this.showAbs = true
       }
+    },
+    goBack () {
+      this.$router.go(-1)
     }
   },
   activated () {
@@ -85,7 +87,7 @@ export default {
 
         .header-fixed-back
             position: absolute
-            top: 0
+            top: .1rem
             left: 0
             width: .64rem
             font-size: .4rem

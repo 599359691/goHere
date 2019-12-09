@@ -5,7 +5,10 @@ import City from '@/pages/city/City'
 import Detail from '@/pages/detail/Detail'
 import Login from '@/pages/login/Login'
 import Regist from '@/pages/regist/Regist'
-
+import Mine from '@/pages/mine/Mine'
+import Text from '@/pages/text/Text'
+import VueCookies from 'vue-cookies'
+Vue.use(VueCookies)
 Vue.use(Router)
 
 export default new Router({
@@ -30,6 +33,14 @@ export default new Router({
       path: '/regist',
       name: 'Regist',
       component: Regist
+    }, {
+      path: '/mine',
+      name: 'Mine',
+      component: Mine
+    }, {
+      path: '/text/',
+      name: 'Text',
+      component: Text
     }
   ],
   scrollBehavior (to, from, savedPosition) {

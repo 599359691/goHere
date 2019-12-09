@@ -6,7 +6,7 @@
         :bannerImgs="gallaryImgs"></detail-banner>
         <detail-header></detail-header>
         <div class="content">
-            <detail-list :list="list"></detail-list>
+            <detail-desc :desc="desc"></detail-desc>
         </div>
     </div>
 </template>
@@ -14,7 +14,7 @@
 <script>
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
-import DetailList from './components/List'
+import DetailDesc from './components/Desc'
 import axios from 'axios'
 
 export default {
@@ -22,32 +22,33 @@ export default {
   components: {
     DetailBanner,
     DetailHeader,
-    DetailList
+    DetailDesc
   },
   data () {
     return {
       sightName: '',
       bannerImg: '',
       gallaryImgs: [],
-      list: []
+      desc: ''
     }
   },
   methods: {
     getDetailInfo () {
-      axios.get('/api/detail.json', {
+      axios.get('/api/detail', {
         params: {
           id: this.$route.params.id
         }
       }).then(this.handleGetDataSucc)
     },
     handleGetDataSucc (res) {
-      res = res.data
-      if (res.ret && res.data) {
-        const data = res.data
+      if (res.status === 200) {
+        let data = res.data.data
         this.sightName = data.sightName
         this.bannerImg = data.bannerImg
         this.gallaryImgs = data.gallaryImgs
-        this.list = data.categoryList
+        this.desc = data.desc
+      } else {
+        console.log('detail err')
       }
     }
   },

@@ -10,10 +10,10 @@
         </div>
         <div class="header-input">
             <label>
-            <span class="iconfont">&#xe632;</span>
-            <input class="search-input"
-                   type="text"
-                   placeholder="输入城市/景点/游玩主题"/>
+                <span class="iconfont">&#xe632;</span>
+                <input class="search-input"
+                       type="text"
+                       placeholder="输入城市/景点/游玩主题"/>
             </label>
         </div>
         <router-link to="/city">
@@ -35,6 +35,14 @@ export default {
     }
   },
   name: 'HomeHeader',
+  created () {
+    if (this.$store.state.ID !== '') {
+      this.ifLogin = true
+      console.log(this.$store.state.ID)
+    } else {
+      console.log('请登录！！')
+    }
+  },
   computed: {
     ...mapState(['city'])
   }
@@ -73,7 +81,7 @@ export default {
             .search-input
                 width: 90%
                 color: #666
-                margin-bottom :.11rem
+                margin-bottom: .11rem
 
         .header-right
             min-width: 1.04rem

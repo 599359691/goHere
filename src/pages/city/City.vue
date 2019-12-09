@@ -2,7 +2,7 @@
     <div>
         <city-header></city-header>
         <city-search
-                :cities="cities"></city-search>
+                   :cities="cities"></city-search>
         <city-list :cities="cities"
                    :hot="hotCities"
                    :letter="letter"></city-list>
@@ -38,14 +38,15 @@ export default {
 
   methods: {
     getCityInfo () {
-      axios.get('/api/city.json').then(this.handleGetCityInfoSucc)
+      axios.get('/api/city').then(this.handleGetCityInfoSucc)
     },
-    handleGetCityInfoSucc (res) {
-      res = res.data
-      if (res.ret && res.data) {
-        const data = res.data
+    handleGetCityInfoSucc: function (res) {
+      let data = res.data[0].data
+      if (res.status === 200) {
         this.cities = data.cities
         this.hotCities = data.hotCities
+      } else {
+        console.log('err')
       }
     },
     handleLetterChange (letter) {

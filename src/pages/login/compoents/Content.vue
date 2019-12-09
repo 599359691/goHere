@@ -11,7 +11,7 @@
                    placeholder="登录密码"/>
         </label>
         <button class="login"
-                v-on:click="sendLoginMsg">
+                v-on:click="sendLoginMsg()">
             登录
         </button>
         <router-link to="/regist">
@@ -22,8 +22,10 @@
 
 <script>
 import axios from 'axios'
+
 export default {
-  name: 'Content',
+
+  name: 'componentsContent',
   data () {
     return {
       us: '',
@@ -32,16 +34,24 @@ export default {
   },
   methods: {
     sendLoginMsg: function () {
-      let loginData = {us: this.us, ps: this.ps}
-      axios.post('/account/user/login', loginData).then(function (res) { // api就是http://localhost:8081,在proxy中配置过
-        if (res.status === '200') {
-          console.log('23456')
-        } else {
-          console.log('213456')
-        }
-      }).catch(function (res) {
-        console.log(res)
-      })
+      if (this.us && this.ps !== '') {
+        let loginData = {us: this.us, ps: this.ps}
+        axios.post('/account/login', loginData).then((res) => {
+          if (res.data.err === 0) {
+            // Vuex储存lastID
+            this.$store.commit('changeUserID', res.data.lastId)
+            console.log(res.data.msg)
+            this.$router.push({path: '/'})
+            this.$router.go(0)
+          } else {
+            console.log(res.data.msg)
+          }
+        }).catch(function (err) {
+          console.log(err)
+        })
+      } else {
+        console.log('邮箱名或密码不能为空')
+      }
     }
 
   }
