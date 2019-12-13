@@ -36,7 +36,8 @@ export default {
     getDetailInfo () {
       axios.get('/api/detail', {
         params: {
-          id: this.$route.params.id
+          id: this.$route.params.id,
+          userId: this.$store.state.ID
         }
       }).then(this.handleGetDataSucc)
     },
@@ -59,6 +60,4 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-    .content
-        height: 50rem
 </style>

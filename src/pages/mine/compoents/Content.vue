@@ -1,7 +1,7 @@
 <template>
     <div class="content">
         <router-link class="text"
-               to="/text">
+               to="/mineText">
             我的文章
         </router-link>
         <button class="login"

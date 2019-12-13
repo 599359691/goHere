@@ -15,5 +15,13 @@ export default {
     } catch (err) {
       console.log(err)
     }
+  },
+  changeAuthor (ctx, author) {
+    ctx.author = author
+    try {
+      localStorage.author = author
+    } catch (err) {
+      console.log(err)
+    }
   }
 }

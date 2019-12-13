@@ -2,7 +2,7 @@
     <div class="header">
         <router-link
                 tag="div"
-                to="/"
+                to="/mineText"
                 class="header-abs">
             <div class="iconfont header-abs-back">&#xe624;</div>
 
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'mineHeader'
+  name: 'editTextHeader'
 }
 </script>
 

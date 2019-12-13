@@ -1,18 +1,18 @@
 <template>
     <div>
-        <button
-                class="header-abs"
-                v-show="showAbs"
-                @click="goBack">
+        <div v-show="showAbs">
+        <button @click="goBack"
+                class="header-abs">
             <span class="iconfont header-abs-back">&#xe624;</span>
         </button>
+        </div>
         <div class="header-fixed"
              v-show="!showAbs"
              :style="opacityStyle">
             <button @click="goBack">
                 <span class="iconfont header-fixed-back">&#xe624;</span>
             </button>
-            景点详情
+            内容详情
         </div>
     </div>
 </template>
@@ -20,6 +20,7 @@
 <script>
 export default {
   name: 'DetailHeader',
+
   data () {
     return {
       showAbs: true,
@@ -68,12 +69,23 @@ export default {
         text-align: center
         background: rgba(0, 0, 0, .8)
 
+    .header-edit
+         position: absolute
+         right: .2rem
+         top: .2rem
+         line-height: .8rem
+         width: 1.2rem
+         height: .8rem
+         text-align: center
+         text-color:#fff
+         background: rgba(0, 0, 0, .8)
+
         .header-abs-back
             color: #fff
             font-size: .4rem
 
     .header-fixed
-        z-index :2
+        z-index: 2
         position: fixed
         top: 0
         left: 0
@@ -84,6 +96,13 @@ export default {
         color: #fff
         font-size: .4rem
         background: $bgColor
+
+        .edit
+            position: absolute
+            right: .1rem
+            width: 1rem
+            font-size: .4rem
+            color: #fff
 
         .header-fixed-back
             position: absolute

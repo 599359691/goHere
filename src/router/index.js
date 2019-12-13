@@ -6,7 +6,8 @@ import Detail from '@/pages/detail/Detail'
 import Login from '@/pages/login/Login'
 import Regist from '@/pages/regist/Regist'
 import Mine from '@/pages/mine/Mine'
-import Text from '@/pages/text/Text'
+import MineText from '@/pages/mineText/MineText'
+import EditText from '@/pages/editText/EditText'
 import VueCookies from 'vue-cookies'
 Vue.use(VueCookies)
 Vue.use(Router)
@@ -26,6 +27,10 @@ export default new Router({
       name: 'Detail',
       component: Detail
     }, {
+      path: '/editText/:id',
+      name: 'EditText',
+      component: EditText
+    }, {
       path: '/login',
       name: 'Login',
       component: Login
@@ -38,9 +43,13 @@ export default new Router({
       name: 'Mine',
       component: Mine
     }, {
-      path: '/text/',
-      name: 'Text',
-      component: Text
+      path: '/mineText',
+      name: 'MineText',
+      component: MineText
+    }, {
+      path: '/editText',
+      name: 'EditText',
+      component: EditText
     }
   ],
   scrollBehavior (to, from, savedPosition) {

@@ -38,7 +38,7 @@ export default {
   created () {
     if (this.$store.state.ID !== '') {
       this.ifLogin = true
-      console.log(this.$store.state.ID)
+      console.log('动态密码:' + this.$store.state.ID)
     } else {
       console.log('请登录！！')
     }

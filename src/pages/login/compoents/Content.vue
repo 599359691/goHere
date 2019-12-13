@@ -1,19 +1,22 @@
 <template>
     <div class="content">
-        <label>
-            <input class="us"
-                   type="text"
-                   v-model="us"
-                   placeholder="邮箱号"/>
+        <div class="lab">
+            <label>
+                <input class="us"
+                       type="text"
+                       v-model="us"
+                       placeholder="邮箱号"/>
             <input class="ps"
                    type="text"
                    v-model="ps"
-                   placeholder="登录密码"/>
-        </label>
+                   placeholder="登录密码"/><br/>
+            </label>
+
         <button class="login"
                 v-on:click="sendLoginMsg()">
             登录
         </button>
+        </div>
         <router-link to="/regist">
         <div class="register">新用户注册</div>
         </router-link>
@@ -61,16 +64,27 @@ export default {
 <style lang="stylus" scoped>
     .content
         margin-top: 1rem
+        .lab
+            width: 188px
+            margin : 0 auto
 
-    .us
-        height: 1rem
-        margin-top: 3rem
+            .us
+                height: 0.8rem
+                margin-top: 3rem
+                border: 1px solid #666
 
-    .ps
-        height: 1rem
-        margin-top: .5rem
+            .ps
+                height: 0.8rem
+                margin-top: .2rem
+                border: 1px solid #666
+        .login
+            width :188px
+            height: 36px
+            background-color: #2d78f4
+            margin-top: .2rem
+            border-radius: 1rem
+            color:#fff
 
-    .login
-    .register
-        margin-top: .4rem
+        .register
+            margin-top: .4rem
 </style>

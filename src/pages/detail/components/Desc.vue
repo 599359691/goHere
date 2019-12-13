@@ -22,4 +22,5 @@ export default {
         line-height: .8rem
         font-size: .32rem
         padding: 0 .2rem
+        word-break:  break-all
 </style>
